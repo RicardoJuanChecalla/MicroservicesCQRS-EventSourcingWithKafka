@@ -1,0 +1,76 @@
+version: "3.4"
+
+services:
+  zookeeper:
+    container_name: zookeeper-container
+    image: bitnami/zookeeper
+    restart: always
+    ports:
+      - "2181:2181"
+    volumes:
+      - "zookeeper_data:/bitnami"
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+  kafka:
+    container_name: kafka-container
+    image: bitnami/kafka
+    ports:
+      - "9092:9092"
+    restart: always
+    volumes:
+      - "kafka_data:/bitnami"
+    environment:
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+      - ALLOW_PLAINTEXT_LISTENER=yes
+      - KAFKA_LISTENERS=PLAINTEXT://:9092
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092
+    depends_on:
+      - zookeeper
+  mongo:
+    container_name: mongo-container
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    restart: always
+    volumes:
+      - mongodb_data_container:/data/db/
+  posgres:
+    container_name: posgres-container
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    restart: always
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgresPsw
+      - POSTGRES_DB=postgres
+  pgadmin:
+    container_name: pgadmin-container
+    image: dpage/pgadmin4:latest
+    ports:
+      - "5050:80"
+    restart: always
+    volumes:
+        - pgadmin_data:/root/.pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@aspnet.com
+      - PGADMIN_DEFAULT_PASSWORD=admin1234
+
+volumes:
+  zookeeper_data:
+    driver: local
+  kafka_data:
+    driver: local
+  mongodb_data_container:
+    driver: local
+  postgresql_data:
+    driver: local
+  pgadmin_data:
+    driver: local
+
+networks:
+  default:
+    external:
+      name: mydockernetwork

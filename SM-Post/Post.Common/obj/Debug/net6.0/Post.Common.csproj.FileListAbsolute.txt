@@ -1,0 +1,15 @@
+D:\SamplesAPI\microservices-CQRS-Kafka\SM-Post\Post.Common\bin\Debug\net6.0\Post.Common.deps.json
+D:\SamplesAPI\microservices-CQRS-Kafka\SM-Post\Post.Common\bin\Debug\net6.0\Post.Common.dll
+D:\SamplesAPI\microservices-CQRS-Kafka\SM-Post\Post.Common\bin\Debug\net6.0\Post.Common.pdb
+D:\SamplesAPI\microservices-CQRS-Kafka\SM-Post\Post.Common\bin\Debug\net6.0\CQRS.Core.dll
+D:\SamplesAPI\microservices-CQRS-Kafka\SM-Post\Post.Common\bin\Debug\net6.0\CQRS.Core.pdb
+D:\SamplesAPI\microservices-CQRS-Kafka\SM-Post\Post.Common\obj\Debug\net6.0\Post.Common.csproj.AssemblyReference.cache
+D:\SamplesAPI\microservices-CQRS-Kafka\SM-Post\Post.Common\obj\Debug\net6.0\Post.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\SamplesAPI\microservices-CQRS-Kafka\SM-Post\Post.Common\obj\Debug\net6.0\Post.Common.AssemblyInfoInputs.cache
+D:\SamplesAPI\microservices-CQRS-Kafka\SM-Post\Post.Common\obj\Debug\net6.0\Post.Common.AssemblyInfo.cs
+D:\SamplesAPI\microservices-CQRS-Kafka\SM-Post\Post.Common\obj\Debug\net6.0\Post.Common.csproj.CoreCompileInputs.cache
+D:\SamplesAPI\microservices-CQRS-Kafka\SM-Post\Post.Common\obj\Debug\net6.0\Post.Common.csproj.CopyComplete
+D:\SamplesAPI\microservices-CQRS-Kafka\SM-Post\Post.Common\obj\Debug\net6.0\Post.Common.dll
+D:\SamplesAPI\microservices-CQRS-Kafka\SM-Post\Post.Common\obj\Debug\net6.0\refint\Post.Common.dll
+D:\SamplesAPI\microservices-CQRS-Kafka\SM-Post\Post.Common\obj\Debug\net6.0\Post.Common.pdb
+D:\SamplesAPI\microservices-CQRS-Kafka\SM-Post\Post.Common\obj\Debug\net6.0\ref\Post.Common.dll
